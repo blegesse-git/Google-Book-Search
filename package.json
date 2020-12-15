@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/blegesse-git/Google-Book-Search/issues"
   },
-  "homepage": "https://github.com/blegesse-git/Google-Book-Search#readme"
+  "homepage": "https://github.com/blegesse-git/Google-Book-Search#readme",
+  "dependencies": {
+    "expres": "0.0.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8"
+  }
 }
