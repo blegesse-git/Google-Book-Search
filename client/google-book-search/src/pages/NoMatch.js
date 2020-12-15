@@ -1,15 +1,19 @@
 import React from "react";
-import Header from "../components/header";
+import { Col, Row, Container } from "../components/Grid";
+import Jumbotron from "../components/Jumbotron";
 
 function NoMatch() {
   return (
-    <div>
-          <Header>
-            <h1>404 Page Not Found</h1>
-            
-          </Header>
-    </div>
-  );
+    <Container fluid>
+    <Row>
+      <Col size="md-12">
+        <Jumbotron>
+          <h1>404 Page Not Found</h1>
+        </Jumbotron>
+      </Col>
+    </Row>
+  </Container>
+);
 }
 
 export default NoMatch;
