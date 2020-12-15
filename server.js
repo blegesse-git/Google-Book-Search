@@ -1,6 +1,6 @@
 const express = require("express");
 const routes = require("./routes");
-const mongoose = require("./routes");
+const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -16,7 +16,12 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(routes)
 
-mongoose.connect(process.env.MONGOD_URI || "mongodb://localhost/googlebooks", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGOD_URI || "mongodb://localhost/googlebooks", { 
+    useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false 
+});
 
 app.listen(PORT, () => {
     console.log( `Server is on port ${PORT}`)

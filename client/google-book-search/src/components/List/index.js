@@ -23,7 +23,7 @@ export function ListItem({ book, clicked , index, name }) {
             style={{ textDecoration: "none", color: "black" }}
             href={book.link}
             target="_blank"
-          >View</a>
+          >Read</a>
         </button>
         <button
           type="button"

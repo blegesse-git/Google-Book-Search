@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/blegesse-git/Google-Book-Search#readme",
   "dependencies": {
-    "expres": "0.0.5",
+    "axios": "^0.21.0",
     "express": "^4.17.1",
-    "mongoose": "^5.11.8"
+    "if-env": "^1.0.4",
+    "mongoose": "^5.11.4"
   }
 }
